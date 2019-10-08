@@ -29,7 +29,7 @@ bot.get_updates(fail_silently: true) do |message|
       "
 
     when /minhaclasse/i
-      opclasses = ['Você é bruxa, eu sinto!', 'Você cheira a demônio de longe...', 'Você não... Você é medium', 'Mais um medium...', 'Queimem a amaldiçoada bruxa!', 'Você é travesso igual a um demônio...']
+      opclasses = ['Hey, Misdreavus! Temos uma bruxa presente!!!','Chico Xavier te batizou como MEDIUM.','Venha, Impidimp: leve este demônio, cria sua contigo!','Você é bruxa, eu sinto!', 'Você cheira a demônio de longe...', 'Você não... Você é medium', 'Mais um medium...', 'Queimem a amaldiçoada bruxa!', 'Você é travesso igual a um demônio...']
       reply.text = "#{opclasses.sample.capitalize}, #{message.from.first_name}!"
 
     when /meuinicial/i
