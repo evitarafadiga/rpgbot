@@ -33,9 +33,11 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{opclasses.sample.capitalize}, #{message.from.first_name}!"
 
     when /meuinicial/i
-      iniciais = ['sveiki']
+      confirmainicial = ['Tens certeza? Minha dona Agatha autorizou???']
+      reply.text = "#{confirmainicial.sample.capitalize}, #{message.from.first_name}!"
+    when /simtenhocerteza/i
+      iniciais = ['https://play.pokemonshowdown.com/sprites/xyani/charmander.gif','https://play.pokemonshowdown.com/sprites/xyani/rattata-alola.gif','https://play.pokemonshowdown.com/sprites/xyani/sandshrew-alola.gif','https://play.pokemonshowdown.com/sprites/xyani/vulpix-alola.gif','https://play.pokemonshowdown.com/sprites/xyani/paras.gif','https://play.pokemonshowdown.com/sprites/xyani/meowth-alola.gif','https://play.pokemonshowdown.com/sprites/xyani/abra.gif','https://play.pokemonshowdown.com/sprites/xyani/grimer-alola.gif','https://play.pokemonshowdown.com/sprites/xyani/gastly.gif','https://play.pokemonshowdown.com/sprites/xyani-shiny/drowzee.gif','https://play.pokemonshowdown.com/sprites/xyani/exeggcute.gif','https://play.pokemonshowdown.com/sprites/xyani-shiny/cubone.gif','']
       reply.text = "#{iniciais.sample.capitalize}, #{message.from.first_name}!"
-
     when /meutrio/i
       optrio = ['Seu trio é com certeza de Kanto', 'Johto e nada mais!', 'Hoenn e nada menos!', 'Trio de Sinnoh.', 'Unova sem choro.', 'Kalos kalos kalos kalos... Kalos!', 'Alola, trio mahalo; sofrimento, dor e pesar!']
       reply.text = "#{optrio.sample.capitalize}, #{message.from.first_name}!"
