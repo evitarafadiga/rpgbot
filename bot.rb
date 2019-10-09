@@ -73,7 +73,7 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{opdesafio.sample.capitalize}, #{message.from.first_name}!"
 
     when /greets/i
-      reply.text = ["Olá, #{message.from.first_name}. Já anotei seu nome no livro dos condenados...","Olá, #{message.from.first_name}. Reservei um lugarzinho especial aqui embaixo..."
+      reply.text = ["Olá, #{message.from.first_name}. Já anotei seu nome no livro dos condenados...","Olá, #{message.from.first_name}. Reservei um lugarzinho especial aqui embaixo..." ]
     else
       reply.text = ["Você deve estar muito chapado pra achar que eu sei o que é #{command.inspect}"," Eu não sei!","Eu não entendi","Não quero entender...","Eu não entendi o que raios #{command.inspect} significa."]
     end
