@@ -48,7 +48,7 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{mensagemi2.sample.capitalize}, #{message.from.first_name}!"
       reply.text = "#{iniciaisfant.sample.capitalize}, #{message.from.first_name}!"
     when /meutrio/i
-      optrio = ['Seu trio é com certeza de Kanto', 'Johto e nada mais!', 'Hoenn e nada menos!', 'Trio de Sinnoh.', 'Unova sem choro.', 'Kalos kalos kalos kalos... Kalos!', 'Alola, trio mahalo; sofrimento, dor e pesar!']
+      optrio = ['Seu trio é com certeza de Kanto', 'Johto e nada, nada, nada mais!', 'Hoenn e nada menos!', 'Trio de Sinnoh.', 'Unova sem choro.', 'Kalos kalos kalos kalos... Kalos!', 'Alola, trio mahalo; sofrimento, dor e pesar!']
       reply.text = "#{optrio.sample.capitalize}, #{message.from.first_name}!"
 
     when /meupack/i
