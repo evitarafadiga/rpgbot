@@ -52,7 +52,7 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{optrio.sample.capitalize}, #{message.from.first_name}!"
 
     when /meupack/i
-      packages = ['Pacote açougueiro entregue com sucesso: Raticate, Persian e Tauros!', 'Pacote detetive entregue! Nele tem: Venomoth, Noctowl e Butterfree! ', 'Pacote viúva entregue com sucesso. Vem com: Gardevoir, Roserade e Gothitelle!', 'Pacote guarda florestal chegando. E nele: Bewear, Beartic e Ursaring!',
+      packages = ['Pacote do açougueiro entregue com sucesso: Raticate, Persian e Tauros!', 'Pacote detetive entregue! Nele tem: Venomoth, Noctowl e Butterfree! ', 'Pacote viúva entregue com sucesso. Vem com: Gardevoir, Roserade e Gothitelle!', 'Pacote guarda florestal chegando. E nele: Bewear, Beartic e Ursaring!',
         'Pacote prostíbulo: Lopunny-Mega, Smoochum e Nidoran-M!', 'Pacote soldado entregue! Recebes: Ninetales, Arcanine e Primeape!', 'Pacote pirata entregue! Vem com: Poliwrath, Golduck e Machamp!', 'Pacote cigano entregue em mãos: Slowbro-Mega, Mr.Mime e Jynx!', 'Pacote pescador saindo! Vem com: Sandslash, Krookodile e Kingler!']
       reply.text = "#{packages.sample.capitalize}, #{message.from.first_name}!"
 
