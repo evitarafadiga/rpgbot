@@ -33,7 +33,7 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{opclasses.sample.capitalize}, #{message.from.first_name}!"
 
     when /meuinicial/i
-      confirmainicial = ['Tens certeza? Minha dona Agatha autorizou???']
+      confirmainicial = ['Tens certeza? Minha dona, sra. Agatha autorizou???']
       reply.text = "#{confirmainicial.sample.capitalize}, #{message.from.first_name}!"
     when /simtenhocerteza/i
       mensagemi1 = ['O seu inicial do Tipo Normal é...']
