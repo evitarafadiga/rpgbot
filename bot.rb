@@ -13,7 +13,7 @@ bot.get_updates(fail_silently: true) do |message|
     when /start/i
       reply.text = "Eu sou o Mimikyu! Tens permissão dos espíritos pra interagir comigo? Clique em /vendominhaalmaaodiabo e vamos descobrir... https://i.kym-cdn.com/photos/images/original/001/194/315/ba6.gif"
     when /vendominhaalmaaodiabo/i
-      tratofeito = ['Você parece decidido... Está mesmo??? Gosto disso. Cá estão suas /opcoes', 'Você me parece relutante. Clique antes que desista... /opcoes', 'Grite bem alto: HAIL SATAN e clique em /opcoes', 'Diga AVE SATAN e clique em /opcoes', 'Lúcifer que te carregue com suas /opcoes', 'SOLVE ET COAGULA E DALE /opcoes', 'Anjo caído ganha /opcoes', 'Exu caveirinha, venha trabalhar nas /opcoes', 'On a highway to hell... Clique em /opcoes','Próxima parada: Piauí. Toma suas /opcoes','Descendo... Clique em //opcoes']
+      tratofeito = ['Você parece decidido... Está mesmo??? Gosto disso. Cá estão as suas /opcoes', 'Você me parece relutante. Clique antes que desista... /opcoes', 'Grite bem alto: HAIL SATAN e clique em /opcoes', 'Diga AVE SATAN e clique em /opcoes', 'Lúcifer que te carregue com suas /opcoes', 'SOLVE ET COAGULA E DALE /opcoes', 'Anjo caído ganha /opcoes', 'Exu caveirinha, venha trabalhar nas /opcoes', 'On a highway to hell... Clique em /opcoes','Próxima parada: Piauí. Toma suas /opcoes','Descendo... Clique em //opcoes']
       reply.text = "#{tratofeito.sample.capitalize}, #{message.from.first_name}!"
 
     when /opcoes/i
