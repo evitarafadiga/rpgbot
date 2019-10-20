@@ -69,7 +69,7 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{ladosdodado.sample.capitalize}, #{message.from.first_name}!"
 
     when /meudesafio/i
-      opdesafio = ['Nada sobre nada por enquanto...', 'Estou ocupado!', 'Shhhh!!!!!!!!', 'Cala a boca!', 'Ciao!']
+      opdesafio = ['Nada sobre nada por enquanto...', 'Estou muitíssimo ocupado!', 'Shhhh!!!!!!!!', 'Cala a boca!', 'Ciao!']
       reply.text = "#{opdesafio.sample.capitalize}, #{message.from.first_name}!"
 
     when /greets/i
