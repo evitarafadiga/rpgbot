@@ -57,7 +57,7 @@ bot.get_updates(fail_silently: true) do |message|
       reply.text = "#{packages.sample.capitalize}, #{message.from.first_name}!"
 
     when /roletarussa/i
-      ciladas = ['Eu decido... TE EXECUTAR!', 'Eu realmente vou TE EXECUTAR!!!', 'Você vai passar batido dessa vez.', 'Por enquanto a sua pele está salva...', 'Você encontrou o tesouro!', 'Parabéns pela sorte de vencer essa rodada.', 'Me diga quem vai morrer no seu lugar...']
+      ciladas = ['Eu decido, sim... TE EXECUTAR!', 'Eu realmente vou TE EXECUTAR!!!', 'Você vai passar batido dessa vez.', 'Por enquanto a sua pele está salva...', 'Você encontrou o tesouro!', 'Parabéns pela sorte de vencer essa rodada.', 'Me diga quem vai morrer no seu lugar...']
       reply.text = "#{ciladas.sample.capitalize}, #{message.from.first_name}!"
 
     when /jankenpo/i
