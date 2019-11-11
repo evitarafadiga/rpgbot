@@ -27,6 +27,8 @@ bot.get_updates(fail_silently: true) do |message|
       /meupack
       /meutrio
       /jogo1
+      /jogo2
+      
       "
 
     when /minhaclasse/i
