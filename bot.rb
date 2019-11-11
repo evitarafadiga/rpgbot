@@ -29,6 +29,7 @@ bot.get_updates(fail_silently: true) do |message|
       /jogo1
       /jogo2
       /jogo3
+      /jogo4
       
       "
 
