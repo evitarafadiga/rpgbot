@@ -28,6 +28,7 @@ bot.get_updates(fail_silently: true) do |message|
       /meutrio
       /jogo1
       /jogo2
+      /jogo3
       
       "
 
