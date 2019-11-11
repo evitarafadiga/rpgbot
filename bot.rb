@@ -32,6 +32,7 @@ bot.get_updates(fail_silently: true) do |message|
       /jogo4
       /jogo5
       /jogo6
+      /jogo7
       "
 
     when /minhaclasse/i
