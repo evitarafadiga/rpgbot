@@ -11,11 +11,12 @@ bot.get_updates(fail_silently: true) do |message|
     message.reply do |reply|
         case command
         when /start/i
-      reply.text = "Emo mo!"
-      puts "sending #{reply.text.inspect} to @#{message.from.username}"
-      reply.send_with(bot)
+        reply.text = "Emo mo!"
+        
         else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
-        end 
+        end
+        puts "sending #{reply.text.inspect} to @#{message.from.username}"
+        reply.send_with(bot) 
     end
 end 
