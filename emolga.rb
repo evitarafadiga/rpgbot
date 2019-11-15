@@ -15,7 +15,7 @@ bot.get_updates(fail_silently: true) do |message|
       puts "sending #{reply.text.inspect} to @#{message.from.username}"
       reply.send_with(bot)
         else
-        reply.text = ["Eu não entendi o que raios #{command.inspect} significa."]
+        reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end 
     end
 end 
