@@ -11,7 +11,11 @@ bot.get_updates(fail_silently: true) do |message|
     message.reply do |reply|
         case command
         when /start/i
-        reply.text = "Emo mo!"
+        reply.text = "Emo mo! #{message.from.first_name}, emo!!!"
+
+        when /meudesafio/i
+        opdesafio = ['Nada sobre nada por enquanto...']
+        reply.text = "#{opdesafio.sample.capitalize}, #{message.from.first_name}!"
         
         else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
