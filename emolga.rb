@@ -23,6 +23,10 @@ bot.get_updates(fail_silently: true) do |message|
         opdesafio = ['Nada sobre nada por emoenquanto...','Depois retornamos nesse emo assunto.','Hmf, err. Nada. Mo!']
         reply.text = "#{opdesafio.sample.capitalize}, #{message.from.first_name}!"
         
+        when /presente/i
+        oppresente = ['Nada de especial por enquanto...']
+        reply.text = "#{oppresente.sample.capitalize}, #{message.from.first_name}!"
+        
         else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end
