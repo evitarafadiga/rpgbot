@@ -14,7 +14,8 @@ bot.get_updates(fail_silently: true) do |message|
         reply.text = "Emo mo! #{message.from.first_name}, emo!!!
         Suas opções são:
         /meudesafio
-        /presente"
+        /presente
+        /cacaaotesouro"
 
         when /meudesafio/i
         opdesafio = ['Nada sobre nada por emoenquanto...','Depois retornamos nesse emo assunto.','Hmf, err. Nada. Mo!']
