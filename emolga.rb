@@ -15,7 +15,8 @@ bot.get_updates(fail_silently: true) do |message|
         Suas opções são:
         /meudesafio
         /presente
-        /cacaaotesouro"
+        /cacaaotesouro
+        /meuinicial"
 
         when /meudesafio/i
         opdesafio = ['Nada sobre nada por emoenquanto...','Depois retornamos nesse emo assunto.','Hmf, err. Nada. Mo!']
