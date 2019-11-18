@@ -17,7 +17,7 @@ bot.get_updates(fail_silently: true) do |message|
         /presente
         /cacaaotesouro
         /meuinicial
-        /cartamagna"
+        /magnacarta"
 
         when /meudesafio/i
         opdesafio = ['Nada sobre nada por emoenquanto...','Depois retornamos nesse emo assunto.','Hmf, err. Nada. Mo!']
@@ -26,7 +26,13 @@ bot.get_updates(fail_silently: true) do |message|
         when /presente/i
         oppresente = ['Nada de especial por enquanto...']
         reply.text = "#{oppresente.sample.capitalize}, #{message.from.first_name}!"
-        
+
+        when /cacaaotesouro/i
+        opcacaaotesouro = ["Emoooo...
+        /minhadica"]
+        reply.text = "#{opcacaaotesouro.sample.capitalize}, #{message.from.first_name}!"
+
+
         else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end
