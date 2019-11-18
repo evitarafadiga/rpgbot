@@ -11,7 +11,9 @@ bot.get_updates(fail_silently: true) do |message|
     message.reply do |reply|
         case command
         when /start/i
-        reply.text = "Emo mo! #{message.from.first_name}, emo!!!"
+        reply.text = "Emo mo! #{message.from.first_name}, emo!!!
+        Suas opções são:
+        /meudesafio"
 
         when /meudesafio/i
         opdesafio = ['Nada sobre nada por emoenquanto...','Depois retornamos nesse emo assunto.','Hmf, err. Nada. Mo!']
