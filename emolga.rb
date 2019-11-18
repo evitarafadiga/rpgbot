@@ -28,9 +28,13 @@ bot.get_updates(fail_silently: true) do |message|
         reply.text = "#{oppresente.sample.capitalize}, #{message.from.first_name}!"
 
         when /cacaaotesouro/i
-        opcacaaotesouro = ["Emoooo...
-        /minhadica"]
+        opcacaaotesouro = ['Emoooo...
+        /minhadica']
         reply.text = "#{opcacaaotesouro.sample.capitalize}, #{message.from.first_name}!"
+
+        when /meuinicial/i
+        opinicial = ['Hmmm...']
+        reply.text = "#{opinicial.sample.capitalize}, #{message.from.first_name}!"
 
 
         else
