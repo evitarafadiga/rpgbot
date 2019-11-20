@@ -33,7 +33,7 @@ bot.get_updates(fail_silently: true) do |message|
         reply.text = "#{opcacaaotesouro.sample.capitalize}, #{message.from.first_name}!"
 
         when /meuinicial/i
-        opinicial = ['Grookey','2','3','4','5','6','7','8','9','10']
+        opinicial = ['Grookey','Scorbunny','3','4','5','6','7','8','9','10']
         reply.text = "#{opinicial.sample.capitalize}, #{message.from.first_name}!"
 
 
