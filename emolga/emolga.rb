@@ -39,7 +39,7 @@ bot.get_updates(fail_silently: true) do |message|
         else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end
-        puts "enviado #{reply.text.inspect} para @#{message.from.username}"
+        puts "sending #{reply.text.inspect} to @#{message.from.username}"
         reply.send_with(bot)
       end
 end
