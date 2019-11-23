@@ -1,11 +1,13 @@
 require 'telegram_bot'
 require 'logger'
 
+logger = Logger.new(STDOUT, Logger::DEBUG)
+
 bot = TelegramBot.new(token:'901142437:AAEkl8AvkPIY8vuVf2wE5dpPT2ZhbcI04PI', logger: logger)
 logger.debug "starting telegram bot"
 
 bot.get_updates(fail_silently: true) do |message|
-  puts "@#{message.from.username}: #{message.text}"
+  logger.info "@#{message.from.username}: #{message.text}"
   command = message.get_command_for(bot)
 
     message.reply do |reply|
@@ -36,10 +38,10 @@ bot.get_updates(fail_silently: true) do |message|
         opinicial = ['Grookey','Scorbunny','Sobble','Snom','Rookidee','Blipbug','Rolycoly','Mime Jr','Hatenna','Impidimp']
         reply.text = "#{opinicial.sample.capitalize}, #{message.from.first_name}!"
 
-        else
+      else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end
-        puts "sending #{reply.text.inspect} to @#{message.from.username}"
+        logger.info "sending #{reply.text.inspect} to @#{message.from.username}"
         reply.send_with(bot)
       end
 end
