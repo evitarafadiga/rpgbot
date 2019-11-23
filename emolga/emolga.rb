@@ -8,7 +8,7 @@ bot.get_updates(fail_silently: true) do |message|
   puts "@#{message.from.username}: #{message.text}"
   command = message.get_command_for(bot)
 
-  message.reply do |reply|
+    message.reply do |reply|
         case command
         when /start/i
         reply.text = "Emo mo! #{message.from.first_name}, emo!!!
@@ -39,23 +39,7 @@ bot.get_updates(fail_silently: true) do |message|
         else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end
-        puts "sending #{reply.text.inspect} to @#{message.from.username}"
+        puts "enviado #{reply.text.inspect} para @#{message.from.username}"
         reply.send_with(bot)
-    end
-  end
-
-  bot.listen do |message|
-  case message.text
-  when '/inicioteste'
-    question = 'London is a capital of which country?'
-    # See more: https://core.telegram.org/bots/api#replykeyboardmarkup
-    answers =
-      Telegram::Bot::Types::ReplyKeyboardMarkup
-      .new(keyboard: [%w(A B), %w(C D)], one_time_keyboard: true)
-    bot.api.send_message(chat_id: message.chat.id, text: question, reply_markup: answers)
-  when '/stopteste'
-    # See more: https://core.telegram.org/bots/api#replykeyboardremove
-    kb = Telegram::Bot::Types::ReplyKeyboardRemove.new(remove_keyboard: true)
-    bot.api.send_message(chat_id: message.chat.id, text: 'Sorry to see you go :(', reply_markup: kb)
-  end
+      end
 end
