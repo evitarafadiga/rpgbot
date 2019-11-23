@@ -1,6 +1,6 @@
 require 'telegram_bot'
 
-token = 'inserir token'
+token = '901142437:AAEkl8AvkPIY8vuVf2wE5dpPT2ZhbcI04PI'
 
 bot = TelegramBot.new(token: token)
 
