@@ -1,8 +1,8 @@
 require 'telegram_bot'
+require 'logger'
 
-token = '901142437:AAEkl8AvkPIY8vuVf2wE5dpPT2ZhbcI04PI'
-
-bot = TelegramBot.new(token: token)
+bot = TelegramBot.new(token:'901142437:AAEkl8AvkPIY8vuVf2wE5dpPT2ZhbcI04PI', logger: logger)
+logger.debug "starting telegram bot"
 
 bot.get_updates(fail_silently: true) do |message|
   puts "@#{message.from.username}: #{message.text}"
