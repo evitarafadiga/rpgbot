@@ -19,7 +19,8 @@ bot.get_updates(fail_silently: true) do |message|
         /presente
         /cacaaotesouro
         /meuinicial
-        /magnacarta"
+        /magnacarta
+        /numero"
 
         when /meudesafio/i
         opdesafio = ['Nada sobre nada por emoenquanto...','Depois retornamos nesse emo assunto.','Hmf, err. Nada. Mo!']
