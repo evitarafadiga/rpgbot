@@ -41,7 +41,7 @@ bot.get_updates(fail_silently: true) do |message|
         reply.text = "#{opinicial.sample.capitalize}, #{message.from.first_name}!"
 
       when /minhadica/i
-      opmdica = ['']
+      opmdica = ['Capital da Nova Zelândia, nome popular com W.']
       reply.text = "#{opmdica.sample.capitalize}, #{message.from.first_name}!"
 
       else
