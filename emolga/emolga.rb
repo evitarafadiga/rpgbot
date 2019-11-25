@@ -44,10 +44,6 @@ bot.get_updates(fail_silently: true) do |message|
         opinicial = ['Grookey','Scorbunny','Sobble','Snom','Rookidee','Blipbug','Rolycoly','Mime Jr','Hatenna','Impidimp']
         reply.text = "#{opinicial.sample.capitalize}, #{message.from.first_name}!"
 
-      when /minhadica/i
-      opmdica = ['Capital da Nova Zelândia, nome popular com W.']
-      reply.text = "#{opmdica.sample.capitalize}, #{message.from.first_name}!"
-
       else
         reply.text = ["Emo, o que, mo #{command.inspect} significa??!."]
         end
