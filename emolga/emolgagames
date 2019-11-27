@@ -6,3 +6,4 @@ reply.text = "#{opmdica1.sample.capitalize}, #{message.from.first_name}!"
 #aprender métodos em ruby
 #aprender main em ruby
 #aprender controller em ruby
+#aprender
