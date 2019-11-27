@@ -1,3 +1,5 @@
 when /minhadica01/i
 opmdica1 = ['Capital da Nova Zelândia, nome popular com W.']
 reply.text = "#{opmdica1.sample.capitalize}, #{message.from.first_name}!"
+
+#aprender a instanciar esses negócios
