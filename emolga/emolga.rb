@@ -40,7 +40,8 @@ bot.get_updates(fail_silently: true) do |message|
         /minhadica05
         /minhadica06
         /minhadica07
-        /minhadica08']
+        /minhadica08
+        /minhadica09']
         reply.text = "#{opcacaaotesouro.sample.capitalize}, #{message.from.first_name}!"
 
         when /meuinicial/i
