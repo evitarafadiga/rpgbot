@@ -6,6 +6,15 @@ when /wellington/i
 opmresp01 = ['Famoso grupo country formado só por mulheres.']
 reply.text = "#{opmresp01.sample.capitalize}, #{message.from.first_name}!"
 
+when /dixiechicks/i
+opmresp02 = ['Diretor de Jurassic Park.']
+reply.text = "#{opmresp02.sample.capitalize}, #{message.from.first_name}!"
+
+when /stevenspielberg/i
+opmresp03 = ['Diretor de Jurassic Park.']
+reply.text = "#{opmresp03.sample.capitalize}, #{message.from.first_name}!"
+
+
 #aprender a instanciar esses negócios
 #aprender métodos em ruby
 #aprender main em ruby
