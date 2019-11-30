@@ -2,6 +2,10 @@ when /minhadica01/i
 opmdica01 = ['Capital da Nova Zelândia, nome popular com W.']
 reply.text = "#{opmdica1.sample.capitalize}, #{message.from.first_name}!"
 
+when /wellington/i
+opmresp01 = ['Famoso grupo country formado só por mulheres.']
+reply.text = "#{opmresp01.sample.capitalize}, #{message.from.first_name}!"
+
 #aprender a instanciar esses negócios
 #aprender métodos em ruby
 #aprender main em ruby
