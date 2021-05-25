@@ -1,0 +1,25 @@
+when /minhadica01/i
+opmdica00 = ['Capital da Nova Zelândia, nome popular com W.']
+reply.text = "#{opmdica00.sample.capitalize}, #{message.from.first_name}!"
+
+when /wellington/i
+opmresp01 = ['Famoso grupo country formado só por mulheres.']
+reply.text = "#{opmresp01.sample.capitalize}, #{message.from.first_name}!"
+
+when /dixiechicks/i
+opmresp02 = ['Diretor de Jurassic Park.']
+reply.text = "#{opmresp02.sample.capitalize}, #{message.from.first_name}!"
+
+when /stevenspielberg/i
+opmresp03 = ['Pokémon da oitava geração do tipo Dragão/Fantasma']
+reply.text = "#{opmresp03.sample.capitalize}, #{message.from.first_name}!"
+
+when /dragapult/i
+opmresp04 = ['Jogo popular de macacos e gorilas saltitantes lançado pela primeira vez em 1981.']
+reply.text = "#{opmresp04.sample.capitalize}, #{message.from.first_name}!"
+
+#aprender a instanciar esses negócios
+#aprender métodos em ruby
+#aprender main em ruby
+#aprender controller em ruby
+#aprender
