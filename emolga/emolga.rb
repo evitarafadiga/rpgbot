@@ -3,7 +3,7 @@ require 'logger'
 
 logger = Logger.new(STDOUT, Logger::DEBUG)
 
-bot = TelegramBot.new(token:'901142437:AAEkl8AvkPIY8vuVf2wE5dpPT2ZhbcI04PI', logger: logger)
+bot = TelegramBot.new(token:'', logger: logger)
 logger.debug "starting telegram bot"
 
 bot.get_updates(fail_silently: true) do |message|
